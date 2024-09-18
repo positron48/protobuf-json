@@ -112,7 +112,7 @@ def compare_compression(generate_data_func, num_records_list, data_type_name):
     return results
 
 # Заданные размеры пакетов
-packet_sizes = [10, 100, 1000]
+packet_sizes = [1, 10, 100, 1000]
 
 # Сравнение компрессии для простых данных
 simple_results = compare_compression(generate_simple_data, packet_sizes, 'Simple')
