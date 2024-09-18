@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+message SimpleRecord {
+    int32 id = 1;
+    string name = 2;
+}
+
+message ComplexRecord {
+    int32 id = 1;
+    string name = 2;
+    string description = 3;
+    float value = 4;
+    bool isActive = 5;
+    repeated string tags = 6;
+}
+
+message LargeRecord {
+    int32 id = 1;
+    string title = 2;
+    string content = 3; // Может содержать длинные тексты и HTML
+}
+
+message DataPacket {
+    repeated SimpleRecord simple_records = 1;
+    repeated ComplexRecord complex_records = 2;
+    repeated LargeRecord large_records = 3;
+}
