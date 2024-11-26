@@ -47,15 +47,7 @@
    pip install protobuf lz4
    ```
 
-2. **Скомпилируйте файл `data.proto` с помощью компилятора Protocol Buffers:**
-
-   ```bash
-   protoc --python_out=. data.proto
-   ```
-
-   Это создаст файл `data_pb2.py`, необходимый для работы со структурой данных в Protobuf.
-
-3. ```bash
+2. ```bash
    python compare_compression.py
    ```
 
